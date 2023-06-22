@@ -78,6 +78,8 @@
 
 body {
     background-color: black;
+    width: 100vw;
+    min-height: 100vh;
 }
 
 @font-face {
@@ -135,4 +137,108 @@ body {
     src:    url(/frontend/assets/fonts/inter/Inter-Regular.ttf) format('truetype');
     font-weight: 400;
     font-style: normal;
+}
+
+
+section {
+    width: 100%;
+    max-width: 1060px;
+
+    margin: 32px auto;
+    background-color: var(--neuDark-25);
+}
+
+.featureCard--Primary {
+    width: 100%;
+    max-width: 790px;
+    padding: 24px 30px;
+    margin: 32px 8px;
+
+    display: flex;
+    flex-direction: row;
+    gap: 38px;
+
+    background-color: var(--accShade-700);
+    border-radius: 4px;
+    overflow: hidden;
+
+    cursor: pointer;
+}
+
+.featureCard--Primary .thumbnail {
+    width: 340px;
+    background-color: var(--accShade-800);
+    height: 325px;
+}
+
+.featureCard--Primary .details{
+    width: 100%;
+    max-width: 353px;
+}
+
+.featureCard--Primary aside {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 32px;
+
+    align-items: flex-end;
+
+}
+.categoryChip {
+    font-family: 'Givonic-Semibold';
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: .5px;
+    padding: 4px 9px;
+    background-color: var(--focBlue-100);
+    border-radius: 6px;
+    margin-bottom: 6px;
+
+    color: var(--accShade-100);
+}
+
+.featureCard--Primary aside .profilePic {
+    width: 44px;
+    height: 100%;
+}
+.featureCard--Primary aside p{
+    font-family: 'Inter-Medium';
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--accShade-400);
+    line-height: 1.5;
+}
+.article--details {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+.featureCard--Primary h2 {
+    font-family: 'Givonic-Bold';
+    font-size: 46px;
+    color: var(--accShade-100);
+    line-height: 1.05;
+    margin-top: 6px;
+}
+
+.article--details h3 {
+    font-family: 'Inter-Regular';
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--accShade-400);
+    line-height: 1.5;
+}
+.article--details h3 span {
+    font-family: 'Inter-Medium';
+    font-weight: 500;
+    color: var(--accShade-300);
+}
+.article--details .detail{
+    font-family: 'Inter-Regular';
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--accShade-500);
 }
